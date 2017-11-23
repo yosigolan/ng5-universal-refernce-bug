@@ -5,6 +5,7 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 
 const routes: Routes = [
   {path: '', component: FrontpageComponent},
+  // in order to see it running with angular 5 as well, just comment the below line:
   {path: 'browser-only', loadChildren: 'app/browser-only/browser-only.module#BrowserOnlyModule'},
   // directs all other routes to the main page
   {path: '**', redirectTo: ''}
